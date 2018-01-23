@@ -65,7 +65,8 @@ RUN set -x && \
 	cp -r /tmp/modpagespeed-${PAGESPEED_VERSION}/src/third_party /tmp/ngx_pagespeed-${PAGESPEED_VERSION}-beta/psol/include/ && \ 
 	cp -r /tmp/modpagespeed-${PAGESPEED_VERSION}/src/tools /tmp/ngx_pagespeed-${PAGESPEED_VERSION}-beta/psol/include/ && \ 
 	cp -r /tmp/modpagespeed-${PAGESPEED_VERSION}/src/pagespeed/automatic/pagespeed_automatic.a /tmp/ngx_pagespeed-${PAGESPEED_VERSION}-beta/psol/lib/Release/linux/x64 && \ 
-	# Build Nginx with support for PageSpeed: # Check http://nginx.org/en/download.html for the latest version. NGINX_VERSION=1.11.13 && \ 
+	# Build Nginx with support for PageSpeed: # Check http://nginx.org/en/download.html for the latest version. 
+	NGINX_VERSION=1.11.13 && \ 
 	cd /tmp && \ 
 	curl -L http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz | tar -zx && \ 
 	cd /tmp/nginx-${NGINX_VERSION} && \ 
