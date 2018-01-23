@@ -50,13 +50,7 @@ RUN set -x && \
     curl -L http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz | tar -zxC /tmp/nginx && \
     cd /tmp/nginx/* && \
     export CFLAGS='-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0' && \
-    ./configure --add-module=/tmp/ngx_pagespeed/* \
-    	--with-http_realip_module \
-    	--prefix=/etc/nginx \
-        --conf-path=/etc/nginx/nginx.conf \
-        --http-log-path=/var/log/nginx/access.log \
-        --error-log-path=/var/log/nginx/error.log \
-        --pid-path=/var/run/nginx.pid && \
+    ./configure --add-module=/tmp/ngx_pagespeed/* && \
     make install --silent && \
 
     # Clean-up:
