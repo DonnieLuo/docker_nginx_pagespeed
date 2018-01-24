@@ -1,4 +1,4 @@
-FROM alpine:3.4 
+FROM alpine:3.6
 # Inspired by wunderkraut/alpine-nginx-pagespeed (aka ilari/alpine-nginx-pagespeed:latest) with some extra modules. 
 RUN apk --no-cache add \ 
 	ca-certificates \ 
