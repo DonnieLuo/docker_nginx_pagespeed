@@ -1,5 +1,5 @@
 FROM alpine:3.4
-# Inspired by wunderkraut/alpine-nginx-pagespeed (aka ilari/alpine-nginx-pagespeed:latest) with some extra modules. 
+# Inspired by wunderkraut/alpine-nginx-pagespeed (aka ilari
 RUN apk --no-cache add \ 
 	ca-certificates \ 
 	libuuid \ 
