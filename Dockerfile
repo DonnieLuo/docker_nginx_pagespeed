@@ -76,8 +76,6 @@ RUN set -x && \
 	--sbin-path=/usr/sbin \ 
 	--modules-path=/usr/lib/nginx \ 
 	--with-http_ssl_module \ 
-	#--with-stream_geoip_module=dynamic \
-	#--with-http_geoip_module=dynamic \
 	--with-http_gzip_static_module \ 
 	--with-file-aio \ 
 	--with-http_v2_module \ 
